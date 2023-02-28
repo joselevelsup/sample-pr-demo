@@ -14,6 +14,12 @@ app.get("/mars", function (_req, res) {
   });
 });
 
+app.get("/mercury", function (_req, res) {
+  res.status(200).json({
+    message: "hello mercury",
+  })
+});
+
 app.get("/jose", function (_req, res) {
   res.status(200).json({
     message: "hello jose",
